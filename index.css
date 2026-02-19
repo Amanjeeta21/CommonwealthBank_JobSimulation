@@ -1,0 +1,49 @@
+/* Keep the Matrix/Terminal theme but allow for scrolling */
+body {
+    background-color: #030303;
+    color: #00ff41; 
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px; /* Added padding for long content */
+    overflow-y: auto; /* Allow scrolling now! */
+    background-image: radial-gradient(circle, rgba(0, 255, 65, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+/* Make headers pop */
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 0.05rem 0 0 #ff00ff, -0.05rem -0.025rem 0 #00ffff;
+    animation: glitch 1s infinite;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #ffcc00; /* Gold for Commonwealth Bank vibe */
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    border-left: 5px solid #00ff41;
+    padding-left: 15px;
+}
+
+p {
+    max-width: 800px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    background: rgba(0, 20, 0, 0.8);
+    padding: 15px;
+    border: 1px solid rgba(0, 255, 65, 0.2);
+}
+
+/* Keep the glitch animation we made earlier */
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    100% { transform: translate(0); }
+}
