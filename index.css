@@ -1,49 +1,65 @@
-/* Keep the Matrix/Terminal theme but allow for scrolling */
+/* CBA BRANDING GUIDELINES - TASK 3 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #030303;
-    color: #00ff41; 
-    font-family: 'Courier New', Courier, monospace;
+    /* Using Neutral Light Gray background */
+    background-color: #EBEBEB; 
+    /* Guideline: Single sans serif font */
+    font-family: 'Gill Sans', 'Lucida Sans', 'Arial', sans-serif;
+    color: #1E1E1E; /* Guideline: All text black by default */
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 40px 20px; /* Added padding for long content */
-    overflow-y: auto; /* Allow scrolling now! */
-    background-image: radial-gradient(circle, rgba(0, 255, 65, 0.1) 1px, transparent 1px);
-    background-size: 30px 30px;
+    line-height: 1.5;
 }
 
-/* Make headers pop */
+/* Guideline: Title text 70pt and Primary Color */
 h1 {
-    font-size: 2.5rem;
-    text-shadow: 0.05rem 0 0 #ff00ff, -0.05rem -0.025rem 0 #00ffff;
-    animation: glitch 1s infinite;
-    margin-bottom: 30px;
-}
-
-h2 {
-    color: #ffcc00; /* Gold for Commonwealth Bank vibe */
-    margin-top: 30px;
+    font-size: 70pt;
+    background-color: #FFCC00; /* Primary Yellow */
+    color: #1E1E1E;
     width: 100%;
-    max-width: 800px;
-    border-left: 5px solid #00ff41;
-    padding-left: 15px;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    border-bottom: 10px solid #1E1E1E;
 }
 
-p {
-    max-width: 800px;
-    line-height: 1.6;
+/* Guideline: Subheading text 38pt and Secondary/Neutral Color */
+h2 {
+    font-size: 38pt;
+    background-color: #BEBEB9; /* Neutral Gray */
+    color: #1E1E1E;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
-    background: rgba(0, 20, 0, 0.8);
-    padding: 15px;
-    border: 1px solid rgba(0, 255, 65, 0.2);
 }
 
-/* Keep the glitch animation we made earlier */
-@keyframes glitch {
-    0% { transform: translate(0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(-2px, -2px); }
-    100% { transform: translate(0); }
+/* Guideline: Body text 18pt */
+p {
+    font-size: 18pt;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+/* Guideline: White text on Black background */
+footer {
+    background-color: #1E1E1E; /* Black */
+    width: 100%;
+    margin-top: 60px;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #FFFFFF; /* White */
+    margin-bottom: 0;
 }
